@@ -1,4 +1,4 @@
-package com.learn.springrestfull.Entity;
+package com.learn.springrestfull.entity;
 
 import com.learn.springrestfull.bean.CurrentBean;
 import com.learn.springrestfull.bean.LocationBean;
@@ -15,6 +15,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class WeatherEntity {
     @Id
     public int employeeId;
-    public LocationBean location;
-    public CurrentBean current;
+    private LocationBean location;
+    private CurrentBean current;
 }

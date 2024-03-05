@@ -1,7 +1,7 @@
 package com.learn.springrestfull.service;
 
 import com.learn.springrestfull.bean.WeatherBean;
-import com.learn.springrestfull.Entity.WeatherEntity;
+import com.learn.springrestfull.entity.WeatherEntity;
 import com.learn.springrestfull.exception.ResourceNotFoundException;
 import com.learn.springrestfull.repository.WeatherDao;
 import com.learn.springrestfull.utils.WebUtils;

@@ -1,4 +1,4 @@
-package com.learn.springrestfull.Entity;
+package com.learn.springrestfull.entity;
 
 import com.learn.springrestfull.bean.ConditionBean;
 import lombok.AllArgsConstructor;

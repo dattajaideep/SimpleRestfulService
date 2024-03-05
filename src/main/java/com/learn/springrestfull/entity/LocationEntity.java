@@ -1,4 +1,4 @@
-package com.learn.springrestfull.Entity;
+package com.learn.springrestfull.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
