@@ -21,7 +21,7 @@ public class WebUtils {
 
         if (request != null) {
             remoteAddr = request.getHeader("X-FORWARDED-FOR");
-            if (remoteAddr == null || "".equals(remoteAddr)) {
+            if (remoteAddr == null || remoteAddr.isEmpty()) {
                 remoteAddr = request.getRemoteAddr();
             }
         }

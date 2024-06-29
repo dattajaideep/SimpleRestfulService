@@ -12,7 +12,6 @@ import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
-//import jakarta.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.core.UriBuilderException;
 import java.net.URI;
@@ -31,7 +30,7 @@ public class RestClientServiceImplementation implements RestClientService {
     private String KEY;
     @Value("${My.RapidApi.Host}")
     private String HOST;
-    private static RestTemplate restTemplate = new RestTemplate();
+    private static final RestTemplate restTemplate = new RestTemplate();
     @Override
     public WeatherBean addWeatherDetails(String city, int empId, HttpServletRequest httpServletRequest) throws ResourceNotFoundException {
         WeatherBean total=null;
